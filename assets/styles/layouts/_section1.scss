@@ -1,0 +1,172 @@
+.section1 {
+    background: url(../images/bg-curve-desktop.svg) center/cover;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    @media screen and (max-width: 850px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        padding: 30px 25px 30px 20px;
+    }
+
+    .left-part1 {
+        margin-top: 150px;
+
+        @media screen and (max-width: 850px) {
+            order: 2;
+            margin-top: 120px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 850px) {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            @media screen and (max-width: 470px) {
+                font-size: 1.1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+            max-width: 550px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 850px) {
+                max-width: none;
+                color: $section2;
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 0.85rem;
+            }
+        }
+        .link {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 850px) {
+                justify-content: center;
+                margin-top: 40px;
+            }
+
+            p {
+                color: $link;
+                font-family: $font1;
+                font-size: 1.2rem;
+                margin-bottom: 0;
+                border-bottom: 2px solid $link;
+                cursor: pointer;
+                padding-bottom: 3px;
+
+                &:active {
+                    opacity: 0.5;
+                    transition: 0.2s;
+                }
+
+                @media screen and (max-width: 850px) {
+                    font-size: 0.8rem;
+                }
+
+                img {
+                    margin-left: 5px;
+                }
+            }
+        }
+        article {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.15);
+            width: 45%;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 850px) {
+                width: 85%;
+                margin: 0 auto;
+                margin-bottom: 80px;
+                padding: 20px 10px 20px 25px;
+            }
+            
+
+            img {
+                height: 15px;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 850px) {
+                    height: 12px;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 22px;
+
+                @media screen and (max-width: 850px) {
+                    color: black;
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 0.6rem;
+                    line-height: 15px;
+                }
+            }
+            .avatar {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50px;
+                    margin: 0;
+
+                    @media screen and (max-width: 850px) {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+                h4 {
+                    font-family: $font1;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                    margin-left: 10px;
+
+                    @media screen and (max-width: 850px) {
+                        font-size: 0.6rem;
+                    }
+
+                    span {
+                        font-size: 0.6rem;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.7);
+
+                        @media screen and (max-width: 850px) {
+                            font-size: 0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-part1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            width: 100%;
+            padding-top: 60px;
+
+            @media screen and (max-width: 850px) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
